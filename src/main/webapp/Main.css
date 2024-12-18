@@ -1,66 +1,78 @@
 @charset "ISO-8859-1";
+
 body {
 	margin: 0;
 	padding: 0;
-	background: url('Back.jpg') no-repeat center fixed;     
-    background-size: cover;
-	word-wrap:break-word !important;
+	background: url("Back2.jpg") no-repeat center fixed;
+	background-size: cover;
+	word-wrap: break-word !important;
 	font-family: 'Open Sans', sans-serif;
-	}
+}
+
 .txt {
-    text-align: center;
-  }
+	text-align: center;
+}
+
 h1 {
 	font-size: 60px;
 	text-align: center;
 	color: white;
-}	
-h2{
+}
+
+h2 {
 	font-size: 30px;
 	text-align: center;
 	color: floralwhite;
 }
+
 h3 {
 	font-size: 30px;
 	line-height: 34px;
 	text-align: center;
 	color: #FFF;
 }
+
 h3 a {
 	color: #FFF;
 }
+
 a {
 	color: #FFF;
 }
+
 h1 {
 	margin-top: 100px;
-	text-align:center;
-	font-size:60px;
+	text-align: center;
+	font-size: 40px;
 	line-height: 70px;
 	font-family: 'Bree Serif', 'serif';
-	}
+}
+
 #container {
 	margin: 0 auto;
-	max-width: 890px;
+	max-width: 300px;
 }
+
 p {
 	text-align: center;
 }
-.toggle,
-[id^=drop] {
+
+.toggle, [id^=drop] {
 	display: none;
 }
-nav { 
-	margin:0;
+
+nav {
+	margin: 0;
 	padding: 0;
 	background-color: #424242;
 }
+
 #logo {
 	display: block;
 	padding: 0 30px;
 	align-content: center;
 	float: left;
-	font-size:20px;
+	font-size: 20px;
 	line-height: 60px;
 	image-orientation: 20px;
 	margin-top: 3px;
@@ -68,90 +80,159 @@ nav {
 	margin-left: -10px;
 	border-radius: 13%;
 }
-	nav:after {
-		content:"";
-		display:table;
-		clear:both;
-	}
+
+nav:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 nav ul {
 	float: left;
-	padding:0;
-	margin:0;
+	padding: 0;
+	margin: 0;
 	list-style: none;
 	position: relative;
-	}
-nav ul#contact {
+}
+
+nav ul#logout {
 	float: right;
-	padding:0;
-	margin:0;
+	padding: 0;
+	margin: 0;
+	margin-right: 30px;
 	list-style: none;
 	position: relative;
-	}
+}
+
 nav ul li {
 	margin: 0px;
-	display:inline-block;
+	display: inline-block;
 	background-color: #424242;
-	}
+}
 
 nav a {
-	display:block;
-	padding:14px 20px;	
-	color:#FFF;
-	font-size:17px;
-	text-decoration:none;
+	display: block;
+	padding: 14px 20px;
+	color: #FFF;
+	font-size: 17px;
+	text-decoration: none;
 }
-nav ul li ul li:hover { background: #000000; }
 
-nav a:hover { 
-	background-color: #000000; 
+nav ul li ul li:hover {
+	background: #000000;
 }
+
+nav a:hover {
+	background-color: #000000;
+}
+
 nav ul ul {
 	display: none;
-	position: absolute; 
-	top: 60px; 
+	position: absolute;
+	top: 60px;
 }
-	
-nav ul li:hover > ul {
-	display:inherit;
+
+nav ul li:hover>ul {
+	display: inherit;
 }
+
 nav ul ul li {
-	width:170px;
-	float:none;
-	display:list-item;
+	width: 170px;
+	float: none;
+	display: list-item;
 	position: relative;
 }
+
 nav ul ul ul li {
 	position: relative;
-	top:-60px;
-	left:170px; 
+	top: -60px;
+	left: 170px;
 }
-img{
+
+img {
 	align-content: center;
 	border-radius: 8px;
 	width: 250px;
 }
-.center{
+
+.center {
 	display: flex;
 	justify-content: center;
 	margin-left: -10px;
 }
-p{
+
+p {
 	color: darkolivegreen;
 }
+
 nav ul {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 nav ul li {
-  position: relative;
-}
-nav ul ul {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  padding: 0;
-  margin: 0;
+	position: relative;
 }
 
- 
+nav ul ul {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	padding: 0;
+	margin: 0;
+}
+/*FORM*/
+.container {
+	margin: 50px auto;
+	margin-top: 100px;
+	max-width: 400px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	color: floralwhite;
+}
+
+h1 {
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: left;
+}
+
+input {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+button {
+	background-color: skyblue;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 100%;
+}
+
+button:hover {
+	background-color: #45a049;
+}
+
+.container h1:first-child {
+	margin-top: 0px;
+}
+
+label {
+	font-size: 20px;
+}
